@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  font-family: 'Roboto', sans-serif;  
+  position: relative;  
+}
+
+a {
+  text-decoration: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  h1.project-title {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-container {
+    width: 100% !important;
+  }
+
+  .wide-screen {
+    display: none !important;
+  }
+
+  .bio-text {
+    width: auto !important;
+    margin: 5% !important;
+  }
+
+  section {
+    margin: 5%;
+    width: 10rem;
+    padding: 1.5rem;
+    min-height: none !important;
+  }
+
+  .about-icon {
+    right: 0.55rem !important;
+    bottom: 3.1rem !important;
+    width: 80px !important;
+  }
+  
+  .hex-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hexagon {
+    width: 100px !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #full-name {
+    color: white !important;
+  }
+
+  section {
+    margin: 0 !important;
+    padding: 0.2rem !important;
+  }
+
+  .section-title {
+    font-size: 1rem !important;
+  }
+
+  .dynamism-p button {
+    font-size: 0.8rem !important;
+  }
+
+  p {
+
+  }
+
+  .project-text > p {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero-margins {
+    margin-top: 9rem !important;
+  }
+
+  .image-circle {
+    min-width: 200px !important;
+    min-height: 200px !important;
+  }
+}
+
+@media (max-height: 800px) {
+  .hero-margins {
+    bottom: 15% !important;
+  }
+}

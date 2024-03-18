@@ -1,0 +1,115 @@
+@import '../Global/_variables.scss';
+
+.menu-button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;  
+  cursor: pointer;
+
+  ////////////
+  // colors //
+  ////////////
+  
+  
+  &--light {
+    border: solid white 2px;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      border: solid white 2px;
+      color: $neutral--dark;
+    }
+  }
+
+  &--dark {  
+    background-color: white;
+    border: solid white 2px;
+    color: $neutral--dark;
+
+    &:hover {
+      background-color: $secondary;
+      color: white;
+      border-color: solid 2px white;
+      box-shadow: $shadow--level-3;
+    }
+  }
+
+  &--white {
+    background-color: white;
+    border: solid white 2px;
+    color: $primary;
+
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: white;
+      box-shadow: $shadow--level-3;
+    }
+  }
+  
+  &--primary {  
+    background-color: $primary;
+    border: solid $primary 2px;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      border: solid white 2px;
+      color: $primary;
+      box-shadow: $shadow--level-3;
+    }
+  }
+
+  &--primary-stroke {  
+    background-color: $primary;
+    border: solid $primary 2px;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $primary;
+      box-shadow: $shadow--level-3;
+    }
+  }
+
+
+  ////////////
+  // sizes  //
+  ////////////
+
+  padding: 0.5rem .5rem;
+
+  &--small {
+    @media (min-width: $viewport-tablet--min) {
+      padding: 0.5rem .5rem;
+    }    
+  }
+
+  &--medium {
+    @media (min-width: $viewport-tablet--min) {
+      padding: 0.75rem 1rem;
+    }
+  }
+
+  &--large {
+    @media (min-width: $viewport-tablet--min) {
+      padding: 1rem 1.3rem;
+    }
+  }
+
+
+  ////////////
+  // icons  //
+  ////////////
+
+
+  svg {
+    transform: scale(1.2) translateY(2px) translateX(4px) rotate(90deg);
+    transition: transform 0.2s;      
+  }
+}

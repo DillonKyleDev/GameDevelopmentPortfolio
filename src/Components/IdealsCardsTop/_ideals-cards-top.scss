@@ -1,0 +1,12 @@
+@import '../Global/_variables.scss';
+
+.ideal-cards-top {
+    &__section-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.pitch-close__emphasis {
+  text-decoration: underline $primary;
+}

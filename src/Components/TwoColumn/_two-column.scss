@@ -1,0 +1,173 @@
+@import '../Global/_variables.scss';
+
+.two-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  row-gap: $padding--xs; 
+  
+  @media (min-width: $viewport-tablet--min) {
+    row-gap: $padding--small; 
+  }   
+
+  &__column {
+    position: relative;  
+    width: 100%;   
+  }
+
+  @media (min-width: 1280px) {
+    flex-direction: row;
+
+    &__column { 
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $viewport-tablet--min) {
+    // Spacing
+    &--spacing-xxs {
+      column-gap: $padding--xxs;
+    }
+
+    &--spacing-xs {
+      column-gap: $padding--xs;
+    }
+
+    &--spacing-small {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-medium {
+      column-gap: $padding--medium;
+    }
+
+    &--spacing-large {
+      column-gap: $padding--xs;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--small;
+    }
+  }
+
+  @media (min-width: $viewport-laptop--min) {
+    // Spacing
+    &--spacing-large {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--small;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--small;
+    }
+  }
+
+    @media (min-width: $viewport-hd--min) {
+    // Spacing
+
+    &--spacing-medium {
+      column-gap: $padding--medium;
+    }
+
+    &--spacing-large {
+      column-gap: $padding--large;
+    }
+
+    &--spacing-xl {
+      column-gap: $padding--xl;
+    }
+
+    &--spacing-xxl {
+      column-gap: $padding--xxl;
+    }
+
+    &--spacing-xxxl {
+      column-gap: $padding--xxxl;
+    }
+  }
+
+  &--vertical-align {
+    &-top {
+      align-items: flex-start;
+    }
+
+    &-middle {
+      align-items: center;
+    }
+
+    &-bottom {
+      align-items: flex-end;
+    }
+  }
+
+  .multi-column {
+
+  }
+}
+
+  
+.color-card {
+  position: absolute;
+  top: $padding--small;
+  bottom: calc($padding--large * -1);
+  left: 15%;
+  right: -15%;
+  border-radius: 3px;  
+  z-index: -1;
+  box-shadow: $shadow--level-1;
+
+  &--right {
+    left: $padding--small;
+    right: calc($padding--small * -1);;
+  }
+
+  &--left {
+    right: $padding--small;
+    left: calc($padding--small * -1);;
+  }
+
+  > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .color-card__background-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background-color {
+    &--primary {
+      background-color: $primary;
+    }
+
+    &--secondary {
+      background-color: $secondary;
+    }
+
+    &--secondary-light {
+      background-color: $secondary--light;
+    }
+  
+    &--secondary-dark {
+      background-color: $secondary--dark;
+    }
+  }
+}

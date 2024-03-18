@@ -1,0 +1,74 @@
+@import '../Global/_variables.scss';
+
+.footer {  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-content {
+  width: max-content;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-link {
+  color: white;
+  transition: color 0.2s;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+
+  &:not(:last-child) {
+    margin-right: $padding--xxxs;
+  }
+
+  svg {
+    margin-bottom: 5px;
+  }
+}
+
+.footer-link:hover {
+  color: $primary;
+}
+
+.small-text {
+  margin-top: $padding--xxxs;
+  font-size: 12px !important;  
+  white-space: nowrap;
+}
+
+.footer-bar {
+  width: 75%;
+  background-color: white;
+  height: 1px;
+  margin-top: $padding--xxs;
+  margin-right: auto;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: $padding--xxxs;
+
+  @media (min-width: $viewport-tablet--min) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.copyright-symbol {
+  transform: scale(.8);
+}

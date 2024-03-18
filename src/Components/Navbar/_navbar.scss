@@ -1,0 +1,44 @@
+@import '../Global/_variables.scss';
+
+#top {
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  padding: 15px 30px;
+  background-color: $secondary;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+
+    path {
+      fill: white;
+    }
+  }
+
+  &__logo-text {
+    color: white;
+  }
+
+  &__menu-items {
+    display: flex;
+
+    > a:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

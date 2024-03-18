@@ -1,0 +1,32 @@
+@import '../Global/_variables.scss';
+
+.about {
+  &__header {
+    text-decoration: underline;
+  }
+
+  &__bio-text--top {    
+    margin-bottom: $padding--xxs;
+  }
+
+  &__bio-text--bottom {
+    border-top: solid 1px white;
+    padding-top: $padding--xs;
+  }
+
+  .hubspot {
+    color: 	$primary--light;
+    text-decoration: underline;
+    transition: text-decoration-color 0.15s;
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-color: $primary--light;
+    }
+  }
+}
+
+#about {
+  padding-top: 75px;
+  margin-top: -75px;
+}
