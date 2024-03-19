@@ -7,13 +7,25 @@
 
 .navbar {
   padding: 15px 30px;
-  background-color: $secondary;
+  background-color: $gamecube--purple;
   position: sticky;
   top: 0px;
   z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__controller-icon {
+    height: 50px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  &__logo-text {
+    font-size: 28px;
+    margin-left: 2px;
+  }
 
   &__logo {
     display: flex;

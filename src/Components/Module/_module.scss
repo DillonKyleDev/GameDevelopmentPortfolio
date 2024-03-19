@@ -36,6 +36,30 @@
     &--secondary-dark {
       background-color: $secondary--dark;
     }
+
+    &--gc-green {
+      background-color: $gamecube--green;
+    }
+
+    &--gc-green-dark {
+      background-color: $gamecube--green--dark;
+    }
+
+    &--gc-red {
+      background-color: $gamecube--red;
+    }
+
+    &--gc-purple {
+      background-color: $gamecube--purple;
+    }
+
+    &--gc-purple-dark {
+      background-color: $gamecube--purple--dark;
+    }
+
+    &--gc-white {
+      background-color: $gamecube--white;
+    }
   }
   
   &__background-svg {    
@@ -96,6 +120,36 @@
     &--secondary-dark {
       path {
         fill: $secondary--dark;
+      }
+    }
+
+    &--gc-green {
+      path {
+        fill: $gamecube--green;
+      }
+    }
+
+    &--gc-green-dark {
+      path {
+        fill: $gamecube--green--dark;
+      }
+    }
+
+    &--gc-red {
+      path {
+        fill: $gamecube--red;
+      }
+    }
+
+    &--gc-purple {
+      path {
+        fill : $gamecube--purple;
+      }
+    }
+    
+    &--gc-purple-dark {
+      path {
+        fill : $gamecube--purple--dark;
       }
     }
   }

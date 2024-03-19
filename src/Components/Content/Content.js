@@ -32,9 +32,9 @@ const Content = () => {
           constrain: 'xxl',
           top_padding: 'xxl',
           bottom_padding: 'xxl',
-          background_color: 'transparent',
+          background_color: 'gc-white',
           show_background_svg_: true,
-          svg_color: 'secondary-light',
+          svg_color: 'gc-purple-dark',
           background_svg_side: 'top-right',
           hide_overflow_: false,
         }} 
@@ -52,7 +52,7 @@ const Content = () => {
           bottom_padding: 'xxxl',
           background_color: 'secondary',
           show_background_svg_: true,       
-          svg_color: 'secondary-light',
+          svg_color: 'gc-white',
           background_svg_side: 'bottom-right',
           hide_overflow_: true,
         }} 

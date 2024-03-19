@@ -1,28 +1,23 @@
 @import '../Global/_variables.scss';
 
 .hero-container {
-  &__photo-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;    
-    margin-bottom: $padding--xxs;  
-
+  &__photo-container {  
     @media (min-width: $viewport-tablet--min) {
       width: 270px;
-      height: 270px;
+      margin-bottom: $padding--xxs;
     }
   }
 
   &__photo {    
-    position: absolute;
     width: 100%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
 
   &__name {
     text-decoration: underline;
-    text-decoration-color: $primary;
+    text-decoration-color: $gamecube--green;
   }
 
   &__introduction {

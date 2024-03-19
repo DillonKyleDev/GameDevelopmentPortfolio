@@ -1,12 +1,13 @@
 @import '../Global/_variables.scss';
 
 .menu-button {
+  position: relative;
   display: inline-block;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   font-weight: 700;
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 0px;
   transition: all 0.2s ease-in-out;  
   cursor: pointer;
 
@@ -14,28 +15,52 @@
   // colors //
   ////////////
   
+  &--pixel-outline {
+    transition: all 0.2s ease-in-out;  
+    position: absolute;
+    width: calc(100%);
+    height: calc(100%);
+    left: 0px;
+    top: 0px;
+  }
   
   &--light {
     border: solid white 2px;
     color: white;
 
+    .menu-button--pixel-outline {
+      border: solid 2px rgb(151, 123, 255);
+    }
+
     &:hover {
       background-color: white;
       border: solid white 2px;
       color: $neutral--dark;
+
+      .menu-button--pixel-outline {
+        border: solid 2px rgb(102, 60, 255);
+      }
     }
   }
 
   &--dark {  
     background-color: white;
-    border: solid white 2px;
-    color: $neutral--dark;
+    border: solid rgb(112, 23, 255) 2px;
+    color: rgb(112, 23, 255);
+
+    .menu-button--pixel-outline {
+      border: solid 2px rgb(178, 157, 255);
+    }
 
     &:hover {
-      background-color: $secondary;
+      background-color: rgb(83, 0, 160);
       color: white;
-      border-color: solid 2px white;
+      border: solid rgb(83, 0, 160) 2px;
       box-shadow: $shadow--level-3;
+
+      .menu-button--pixel-outline {
+        border: solid 2px rgb(166, 98, 255);
+      }
     }
   }
 
@@ -43,6 +68,11 @@
     background-color: white;
     border: solid white 2px;
     color: $primary;
+
+    .menu-button--pixel-outline {
+      border: solid 2px white;
+    }
+
 
     &:hover {
       background-color: $primary;
@@ -57,6 +87,11 @@
     border: solid $primary 2px;
     color: white;
 
+    .menu-button--pixel-outline {
+      border: solid 2px white;
+    }
+
+
     &:hover {
       background-color: white;
       border: solid white 2px;
@@ -70,13 +105,41 @@
     border: solid $primary 2px;
     color: white;
 
+    .menu-button--pixel-outline {
+      border: solid 2px $primary--extra-light;
+    }
+
     &:hover {
       background-color: white;
       color: $primary;
       box-shadow: $shadow--level-3;
+
+      .menu-button--pixel-outline {
+        border: solid 2px $primary--extra-light-hover;
+      }
     }
   }
 
+  &--gc-green {  
+    background-color: white;
+    border: solid $gamecube--green 2px;
+    color: $gamecube--green;
+
+    .menu-button--pixel-outline {
+      border: solid 2px $gamecube--green--dark;
+    }
+
+    &:hover {
+      background-color: $gamecube--green;
+      color: white;
+      border: solid $gamecube--green 2px;
+      box-shadow: $shadow--level-3;
+
+      .menu-button--pixel-outline {
+        border: solid 2px $gamecube--green--dark;
+      }
+    }
+  }
 
   ////////////
   // sizes  //
@@ -93,12 +156,14 @@
   &--medium {
     @media (min-width: $viewport-tablet--min) {
       padding: 0.75rem 1rem;
+      font-size: 18px;
     }
   }
 
   &--large {
     @media (min-width: $viewport-tablet--min) {
       padding: 1rem 1.3rem;
+      font-size: 18px;
     }
   }
 

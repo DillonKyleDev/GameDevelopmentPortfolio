@@ -22,7 +22,7 @@ function Module(props) {
   } = props;
 
   return (
-    <div className={`module ${ style.text_color } ${ style.hide_overflow_ && 'module--hide-overflow'} }`}>      
+    <div className={`module ${ style.text_color } ${ style.hide_overflow_ && 'module--hide-overflow' }`}>      
       <div className={`module__bg-container module__bg-color--${style.background_color}`}></div>
       { style.show_background_svg_ &&
         <div className={`module__background-svg ${`module__background-svg--${style.background_svg_side}`} module__background-svg--${ style.svg_color }`}>
