@@ -1,7 +1,6 @@
 import React from 'react';
 import './_menu-button.scss';
 import { FiArrowRight } from 'react-icons/fi'
-import PixelButton from '../../assets/Button.png';
 
 function MenuButton(props) {
     const { 

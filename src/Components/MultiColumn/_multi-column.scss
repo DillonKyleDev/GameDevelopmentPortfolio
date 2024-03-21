@@ -125,8 +125,8 @@
   }
 
   //border: solid 1px $secondary--dark;  
-  background-color: white;      
-  border-radius: 3px;
+  background-color: $gamecube--white;      
+  // border-radius: 3px;
   overflow: hidden;
   box-shadow: $shadow--level-4;
   transition: box-shadow 0.3s;  
@@ -148,8 +148,8 @@
 
   &__title {
     margin-bottom: 15px;
-    color: $primary !important;
-    text-decoration: underline $primary;
+    color: $gamecube--red !important;
+    // text-decoration: underline $gamecube--green;
   }
 
   &__text {

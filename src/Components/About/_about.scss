@@ -5,6 +5,29 @@
     text-decoration: underline;
   }
 
+  &__photo-container {
+    background-color: transparent;
+    position: relative;
+    
+    img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__highlight-red {
+    color: $gamecube--red;
+  }
+
+  &__highlight-yellow {
+    color: $gamecube--yellow;
+  }
+
+  &__highlight-green {
+    color: $gamecube--green;
+  }
+
   &__bio-text--top {    
     margin-bottom: $padding--xxs;
   }

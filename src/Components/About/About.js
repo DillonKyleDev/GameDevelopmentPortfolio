@@ -2,6 +2,8 @@ import React from 'react';
 import TwoColumn from '../TwoColumn/TwoColumn';
 import MultiColumn from '../MultiColumn/MultiColumn';
 import { IconCard } from '../MultiColumn/MultiColumn';
+import UnityLogo from '../../assets/unitylogo.png';
+import UnrealLogo from '../../assets/unreallogo.png';
 import './_about.scss';
 
 
@@ -12,38 +14,28 @@ function About() {
       <TwoColumn columns={[         
         <div className='about__text-column'>
           <div className='about__header-container'>
-            <h1 className='about__header'>Who is he?</h1>
+            <h1 className='about__header'>Who am I?</h1>
             <div className='about__underline'/>
           </div> 
 
           <div className='about__bio-text'>
             <p className='about__bio-text--top large'>
-              A front end Hubspot developer with a wide range skills and experience.  Dillon has been a <u>one-stop shop</u> for individuals - working as the designer and developer - as well as worked on smaller <u>teams</u> as a developer alongside other developers, designers and implementers.
+              A game developer with a passion for making quality games.  I've developed games using <span className='about__highlight-yellow'>Unity</span> and <span className='about__highlight-yellow'>Unreal</span> engine.  I've also created my own game engine called <span className='about__highlight-yellow'>FlatEngine</span>, which I've used to make several 2D games.
             </p>
             <p className='about__bio-text--bottom large'>
-              Dillon is currently enjoying mastering the <a class='hubspot' target='_blank' rel="noreferrer" href='https://www.hubspot.com/'>Hubspot</a> CMS but is always sharpening his skills, ready for whatever might come his way.
+              I'm currently working on a passion project code named <span className='about__highlight-red'>Project Arcane.</span>  
             </p>
           </div>
         </div>
         ,
         <MultiColumn 
           columns={[
-            <IconCard 
-              title='Certified'
-              text='Hubspot and front end certified.'
-            />,
-            <IconCard 
-              title='Hubspot'
-              text='A world-class Content Management System.'
-            />,
-            <IconCard 
-              title='Front End'
-              text='Your first impression wizard.'
-            />,
-            <IconCard 
-              title='Communicator'
-              text="Let's talk! We'll figure it out together."
-            />
+              <div className='about__photo-container icon-card-spacing'>       
+                <img className='about__photo' alt='Unity Logo' src={ UnityLogo }/> 
+              </div>,
+              <div className='about__photo-container icon-card-spacing'>       
+                <img className='about__photo' alt='Unreal Logo' src={ UnrealLogo }/> 
+              </div>
           ]}
           columnStyle='icon-card'
           columnCount='two-column'

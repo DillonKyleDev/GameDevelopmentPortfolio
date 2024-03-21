@@ -1,5 +1,4 @@
 import React from 'react';
-import profilePicture from '../../assets/main-photo.jpg';
 import './_heroContainer.scss';
 import MenuButton from  '../MenuButton/MenuButton';
 import GameCubeController from '../../assets/Player.png';
@@ -13,7 +12,7 @@ function HeroContainer() {
       </div>
 
       <div className='hero-container__introduction'>      
-        <h1>Meet <span class="hero-container__name">Dillon Kyle</span>,</h1>
+        <h1>Meet <span class="hero-container__name">Dillon</span>,</h1>
         <h1 className='hero-container__subtext'>a gameplay engineer.</h1>    
 
         <MenuButton buttonText='See more' 
